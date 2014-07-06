@@ -1,0 +1,3 @@
+When the Java app starts, we will have a fanfare sound (perhaps a platinum unlock sound) and possibly confetti
+The PST logo will appear along with the a banner saying "Hall of Fame"
+The first screen will be the overall results
