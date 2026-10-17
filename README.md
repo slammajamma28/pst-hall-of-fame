@@ -14,5 +14,5 @@ Then open http://localhost:8000.
 
 This is a dependency-free static site. Publish the repository root from the main branch in the repository's Pages settings. The site reads its normalized medal data from public/data.js.
 
-Data source: the supplied HallofFame.xls. Participation sheets and Participation fields are intentionally excluded. League cards link to the canonical PST Hall of Fame forum thread.
+Data source: the supplied HallofFame.xls. Participation sheets and Participation fields are intentionally excluded. League cards and player search results link to the individual PST forum topic listed in the Hall of Fame thread.
 
