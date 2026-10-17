@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101a2e" />
+  <title>PST Fantasy Sports Hall of Fame</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="PST Fantasy Sports Hall of Fame home">
+        <span class="brand-mark">PST</span>
+        <span><strong>Fantasy Sports</strong><small>Hall of Fame</small></span>
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="#leaderboards">Leaderboards</a>
+        <a href="#leagues">Leagues</a>
+        <a href="#search">Find a player</a>
+      </nav>
+      <a class="forum-link" href="https://www.playstationtrophies.org/forum/topic/271058-pst-fantasy-sports-hall-of-fame/" target="_blank" rel="noreferrer">Forum thread ↗</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PST Fantasy Sports</p>
+        <h1>Every podium has a story.</h1>
+        <p class="hero-lede">A living record of the players, seasons, and leagues that made the PST fantasy sports community.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#leaderboards">Explore leaderboards</a>
+          <a class="button button-quiet" href="#search">Search a player</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Hall of Fame summary">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-trophy">★</div>
+        <p>Gold · Silver · Bronze</p>
+        <strong id="hero-count">—</strong>
+        <span>podium finishes recorded</span>
+      </div>
+    </section>
+
+    <section class="stat-strip" id="stats" aria-label="Hall of Fame totals"></section>
+
+    <section class="section" id="leaderboards">
+      <div class="section-heading">
+        <div><p class="eyebrow">The record book</p><h2>Leaderboards</h2></div>
+        <p class="section-note">Ranked by Gold, then Silver, then Bronze. Participation-only information is excluded.</p>
+      </div>
+      <div class="tabs" id="sport-tabs" role="tablist" aria-label="Leaderboard sports"></div>
+      <div class="leaderboard-shell">
+        <div class="table-tools"><span id="leaderboard-label"></span><label class="compact-search"><span>Filter</span><input id="leaderboard-filter" type="search" placeholder="Player name" /></label></div>
+        <div class="table-scroll"><table class="leaderboard-table"><thead><tr><th>#</th><th>Player</th><th class="medal gold">Gold</th><th class="medal silver">Silver</th><th class="medal bronze">Bronze</th><th>Total</th></tr></thead><tbody id="leaderboard-body"></tbody></table></div>
+      </div>
+    </section>
+
+    <section class="section leagues-section" id="leagues">
+      <div class="section-heading">
+        <div><p class="eyebrow">The seasons</p><h2>League podiums</h2></div>
+        <p class="section-note">Every league links back to its home in the PST Fantasy Sports forum.</p>
+      </div>
+      <div class="league-controls">
+        <div class="tabs tabs-small" id="league-tabs" role="tablist" aria-label="League sports"></div>
+        <label class="league-search"><span>Search leagues or players</span><input id="league-filter" type="search" placeholder="Try “Darth_Krid” or “Premier League”" /></label>
+      </div>
+      <div class="league-grid" id="league-grid"></div>
+    </section>
+
+    <section class="section search-section" id="search">
+      <div class="search-panel">
+        <div><p class="eyebrow">Player finder</p><h2>Find your place in the record.</h2><p>Search a username to see their overall rank, sport-by-sport totals, and every podium finish.</p></div>
+        <label class="finder-input"><span class="sr-only">Search a player</span><input id="player-search" type="search" placeholder="Enter a PST username…" autocomplete="off" /><kbd>⌘ K</kbd></label>
+      </div>
+      <div id="player-results" class="player-results empty-state"><p>Start typing a username above.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>PST Fantasy Sports Hall of Fame</span><span>Data from HallofFame.xls · Gold, Silver, Bronze only</span><a href="https://github.com/slammajamma28/pst-hall-of-fame" target="_blank" rel="noreferrer">View on GitHub ↗</a></footer>
+  <script src="public/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
