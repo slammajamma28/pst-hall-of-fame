@@ -355,4 +355,6 @@ window.PST_TOPIC_LINKS = {
   ,'Soccer|PST 2015-2016 Fantasy Premier League (Top 11)':'https://www.playstationtrophies.org/forum/pst-fantasy-sports-leagues/270298-pst-2015-2016-fantasy-premier-league-36.html'
   ,'Soccer|PST 2015-2016 Fantasy Premier League (Classic)':'https://www.playstationtrophies.org/forum/pst-fantasy-sports-leagues/270298-pst-2015-2016-fantasy-premier-league-36.html'
   ,'Soccer|PST 2015-2016 Fantasy Premier League (H2H)':'https://www.playstationtrophies.org/forum/pst-fantasy-sports-leagues/270298-pst-2015-2016-fantasy-premier-league-36.html'
+  ,'Soccer|FIFA Wold Cup 2026 Goalscorer Challenge':'https://www.playstationtrophies.org/forum/topic/343818-fifa-world-cup-2026-goalscorer-challenge/'
+  ,'Soccer|FIFA World Cup Fantasy Football 2026':'https://www.playstationtrophies.org/forum/topic/343789-pst-fifa-world-cup-fantasy-football-2026/'
 };
