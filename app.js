@@ -16,8 +16,10 @@ const medalText = value => medalValues(value).join(', ') || '—';
 function rankRows(rows) { return rows.map((row, index) => ({ ...row, rank: index + 1 })); }
 function renderStats() {
   const podiums = sports.reduce((sum, sport) => sum + sport.leagues.reduce((count, league) => count + medalNames.reduce((n, medal) => n + medalValues(league[medal]).length, 0), 0), 0);
+  const leagues = sports.reduce((n, sport) => n + sport.leagues.length, 0);
   $('#hero-count').textContent = podiums.toLocaleString();
-  $('#stats').innerHTML = [[overall.leaders.length, 'overall players'], [sports.reduce((n, s) => n + s.leagues.length, 0), 'leagues tracked'], [podiums, 'podium finishes']].map(([value, label]) => `<div class="stat"><strong>${value}</strong><span>${label}</span></div>`).join('');
+  $('#hero-players').textContent = overall.leaders.length.toLocaleString();
+  $('#hero-leagues').textContent = leagues.toLocaleString();
 }
 function tabHtml(list, selected) { return list.map(sport => `<button class="tab ${sport.id === selected ? 'active' : ''}" data-sport="${sport.id}" role="tab">${esc(sport.name)}${sport.id !== 'overall' ? `<span class="tab-count">${sport.leagues.length}</span>` : ''}</button>`).join(''); }
 function renderSportTabs() {

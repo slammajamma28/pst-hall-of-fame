@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#101a2e" />
   <title>PST Fantasy Sports Hall of Fame</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body>
   <header class="site-header">
@@ -40,10 +40,12 @@
         <p>Gold · Silver · Bronze</p>
         <strong id="hero-count">—</strong>
         <span>podium finishes recorded</span>
+        <div class="hero-metrics" aria-label="Hall of Fame totals">
+          <div><strong id="hero-players">—</strong><span>overall players</span></div>
+          <div><strong id="hero-leagues">—</strong><span>leagues tracked</span></div>
+        </div>
       </div>
     </section>
-
-    <section class="stat-strip" id="stats" aria-label="Hall of Fame totals"></section>
 
     <section class="section" id="leaderboards">
       <div class="section-heading">
