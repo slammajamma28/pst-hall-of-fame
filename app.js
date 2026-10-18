@@ -15,7 +15,7 @@ const medalText = value => medalValues(value).join(', ') || '—';
 
 function rankRows(rows) { return rows.map((row, index) => ({ ...row, rank: index + 1 })); }
 function renderStats() {
-  const podiums = sports.reduce((sum, sport) => sum + sport.leagues.reduce((count, league) => count + medalNames.reduce((n, medal) => n + medalValues(league[medal]).length, 0), 0), 0);
+  const podiums = overall.leaders.reduce((sum, player) => sum + total(player), 0);
   const leagues = sports.reduce((n, sport) => n + sport.leagues.length, 0);
   $('#hero-count').textContent = podiums.toLocaleString();
   $('#hero-players').textContent = overall.leaders.length.toLocaleString();
