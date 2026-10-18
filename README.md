@@ -8,6 +8,8 @@ This repository hosts a more interactive page where users can check out the PST 
 
 This will include filtering options for sports, leagues, and users, as well as links to all the leagues.
 
+[View the Site](http://slammajamma28.github.io/pst-hall-of-fame/)
+
 ## AI Notice
 
 This started as an idea 12 years ago, made real today with OpenAI.
