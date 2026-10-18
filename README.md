@@ -1,4 +1,13 @@
-pst-hall-of-fame
-================
+![banner](https://i.imgur.com/gyWXWxv.png)
 
-This program will be a web app where users can check out a the Hall of Fame in a more visually pleasing manner. This will include sorting options for sports, as well as links to all the leagues and users.
+# PST Sports Bar Hall of Fame
+
+_A chronicle of champions for fantasy leagues held in The Sports Bar._
+
+This repository hosts a more interactive page where users can check out the PST Fantasy Sports Hall of Fame.
+
+This will include filtering options for sports, leagues, and users, as well as links to all the leagues.
+
+## AI Notice
+
+This started as an idea 12 years ago, made real today with OpenAI.
