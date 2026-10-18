@@ -1,18 +1,13 @@
-# PST Fantasy Sports Hall of Fame
+![banner](https://i.imgur.com/gyWXWxv.png)
 
-Static GitHub Pages site for the PST Fantasy Sports Hall of Fame.
+# PST Sports Bar Hall of Fame
 
-## Local preview
+_A chronicle of champions for fantasy leagues held in The Sports Bar._
 
-Run any static server from the repository root, for example:
+This repository hosts a more interactive page where users can check out the PST Fantasy Sports Hall of Fame.
 
-    python3 -m http.server 8000
+This will include filtering options for sports, leagues, and users, as well as links to all the leagues.
 
-Then open http://localhost:8000.
+## AI Notice
 
-## GitHub Pages
-
-This is a dependency-free static site. Publish the repository root from the main branch in the repository's Pages settings. The site reads its normalized medal data from public/data.js.
-
-Data source: the supplied HallofFame.xls. Only Gold, Silver, and Bronze results are included. League cards and player search results link to the individual PST forum topic listed in the Hall of Fame thread.
-
+This started as an idea 12 years ago, made real today with OpenAI.
